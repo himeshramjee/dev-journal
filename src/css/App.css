@@ -1,0 +1,96 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 20vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 1s alternate;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-body-left {
+  background-color: #f1f5ff;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  font-size: calc(5px + 2vmin);
+  color: rgb(0, 0, 0);
+}
+
+.App-body-right {
+  background-color: #ececec;
+  min-height: 60vh;
+  display: flexbox;
+  flex-direction: row;
+  align-items: right;
+  justify-content: left;
+  font-size: calc(5px + 2vmin);
+  color: rgb(0, 0, 0);
+}
+
+.App-text-input {
+  font-size: calc(1px + 2vmin);
+}
+
+.App-text-input textarea {
+  width: 100vh;
+  height: 30vh;
+}
+
+.App-toast-message {
+  background-color: rgb(255, 255, 255);
+  font-size: 14px;
+  box-sizing: border-box;
+  position: fixed;
+  color: rgb(0, 0, 0);
+}
+
+/* .App-toast-message.App-toast-message-icon { */
+.App-toast-message img {
+  float: left;
+  width: 50vmin;
+  height: 20vmin;
+  display: block;
+}
+
+.App-toast-message.App-toast-message-text {
+  font-size: calc(1px + 2vmin);
+}
+
+.top-right {
+  top: 12px;
+  right: 12px;
+  transition: transform .6s ease-in-out;
+  animation: toast-in-right .7s;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
